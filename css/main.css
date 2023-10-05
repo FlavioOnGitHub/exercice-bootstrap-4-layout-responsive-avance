@@ -1,14 +1,3 @@
-/* ====================================
-// css variables
-// ==================================== */
-
-:root {
-}
-
-/* ====================================
-// reset rules
-// ==================================== */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,4 +26,50 @@ video {
   max-inline-size: 100%;
   block-size: auto;
   vertical-align: middle;
+}
+
+/* my css*/
+
+.row + .row {
+  margin-top: 16px;
+}
+
+.row > .col,
+.row > [class^="col-"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+.ex-1,
+.ex-2,
+.ex-3,
+.ex-4 {
+  margin-bottom: 120px;
+}
+
+.ex-3 .row > [class^="col-"] {
+  background-color: rgb(177, 176, 176);
+  border: 1px white solid;
+}
+
+.ex-3 .col {
+  background-color: rgb(177, 176, 176);
+  border: 1px white solid;
+}
+
+.black-section {
+  background-color: black;
+}
+
+.pink-section {
+  background-color: pink;
+}
+
+.blue-section {
+  background-color: rgb(118, 199, 228);
+}
+
+.colonne-4 {
 }
